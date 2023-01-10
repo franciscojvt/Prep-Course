@@ -60,20 +60,25 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x == y) {
+  if (x === y) {
     return true;
-  }
-  return false;
+  } else {
+    return false;
+  }  
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+  str1 = str1.left;
+  str2 = str2.left;
+  
   if (str1 == str2) {
     return true;
   }
-  return false;
+  else {
+    return false;
 }
 
 function menosQueNoventa(num) {
@@ -83,7 +88,11 @@ function menosQueNoventa(num) {
   if (num < 90) {
     return true;
   }
-  return false;
+  else {
+  
+    return false;
+
+  }
 }
 
 function mayorQueCincuenta(num) {
@@ -93,7 +102,9 @@ function mayorQueCincuenta(num) {
   if (num > 50) {
     return true;
   }
-  return false;
+  else {
+    return false;
+  }  
 }
 
 function obtenerResto(x, y) {
@@ -106,11 +117,14 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 === 2) {
+  if (num % 2 === 0) {
     return true;
   
   }
-  return false;
+  else {
+    return false;
+
+  }
 }
 
 
@@ -118,11 +132,13 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 != 2){
+  if (num % 2 === 1){
   return true;
 
   }
-  return false;
+  else {
+    return false;
+  }
 }
 
 function elevarAlCuadrado(num) {
@@ -169,11 +185,12 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if (numero > 0){
     return "Es positivo";
-  } else if (numero < 0){
-    return "Es negativo"
-  } else (numero === 0 ){
+  }else if (numero === 0 )
     return false;
+  else {
+    return "Es negativo"
   }
+  
 }
 
 
